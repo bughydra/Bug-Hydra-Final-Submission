@@ -1,0 +1,27 @@
+<h1>FLOOR [x] - ROOM LAYOUT</h1>
+<h1>Room Status</h1>
+
+<div *ngFor="let tempRoom of roomList" class="grid-container">
+  <a routerLink="/room/{{tempRoom.id}}" routerLinkActive="active-link">
+  <div *ngIf="tempRoom.numberOfResidents < tempRoom.capacity; else elseBlock" class="grid-item green">
+    <p>{{tempRoom.roomNumber}}</p>
+    <p>{{tempRoom.view}}</p>
+  </div>
+  </a>
+
+  <a routerLink="/room/{{tempRoom.id}}" routerLinkActive="active-link">
+  <ng-template #elseBlock>
+    <div class="grid-item red">
+      <p>{{tempRoom.roomNumber}}</p>
+      <p>{{tempRoom.view}}</p>
+    </div>
+  </ng-template>
+  </a>
+
+</div>
+<div class="legend">
+  <div class="legend-square green"></div>
+  <div class="legend-text">Available</div>
+  <div class="legend-square red"></div>
+  <div class="legend-text">Occupied</div>
+</div>

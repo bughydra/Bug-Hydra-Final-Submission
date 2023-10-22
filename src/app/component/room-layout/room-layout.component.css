@@ -1,0 +1,120 @@
+/* Add styles for the profile box */
+/* Add styles for the room info box */
+.room-info-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    flex-direction: column; /* Place the tenant info under the room info */
+}
+
+/* Style the room information */
+.room-info {
+    text-align: center;
+}
+
+/* Style the tenant information */
+.tenant-info {
+    margin-top: 20px; /* Adjust margin for spacing */
+    text-align: center;
+}
+
+/* Style the "View" button */
+.view-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.view-button:hover {
+    background-color: #0056b3;
+}
+
+/* Add styles for the payment info box */
+.payment-info-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    flex-direction: column; /* Place the payment actions under the payment info */
+}
+
+/* Style the payment information */
+.payment-info {
+    text-align: center;
+}
+
+/* Style the text box */
+.text-box {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Style the action buttons */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Style the "Update Information" button */
+.update-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.update-button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the "Send Eviction Notice" button */
+.eviction-button {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: 1;
+}
+
+.eviction-button:hover {
+    background-color: #cc3700;
+}
+
+/* Add styles for the payment status button */
+.status-button {
+    display: inline-block;
+    background-color: #00b809;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+
+
+
+

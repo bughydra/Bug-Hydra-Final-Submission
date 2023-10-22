@@ -1,1 +1,198 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("assets/images/background.jpg"); /* Replace "background.jpg" with the path to your image */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; /* Fix the background in place while scrolling */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  font-family: Arial, sans-serif; /* Maintain your font styling */
+  color: #333; /* Maintain your text color */
+}
+
+header {
+  position: relative;
+  background-image: url('assets/images/background.jpg'); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Text color on top of the frosted glass effect */
+  padding: 10px 0;
+}
+
+header::before {
+  content: "";
+  background: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(10000px); /* Apply a blur effect to create the frosted glass effect */
+  opacity: 0.75; /* Adjust the opacity to control the level of transparency */
+  z-index: -1; /* Place the pseudo-element below the content */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+
+.menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-right: 300px;
+  margin-top: 9px;
+  font-size: 18px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.menu .title1 {
+  margin-right: 375px;
+  margin-bottom: 3px;
+
+}
+
+.menu li {
+  margin: 0 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s; /* Add a smooth transition effect */
+  padding: 6px 12px; /* Adjust padding for better hover effect */
+}
+
+.menu li a:hover {
+  background-color: #007bff; /* Change the background color on hover */
+}
+
+
+.content {
+  /* Add appropriate styles for the content section */
+}
+
+
+div.logo {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 120px;
+  margin-left: 370px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+img {
+  width: 100px;
+  height: 100px;
+}
+.caption {
+  display: block;
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 1fr; /* Two rows: one for the title, one for the grid items */
+  grid-gap: 20px;
+  padding: 20px;
+
+
+
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  grid-column: span 2; /* Span the full width of the grid */
+}
+.grid-item {
+  position: relative;
+  /*background-image: url('assets/images/background.jpg'); !* Replace with your background image *!*/
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Text color on top of the frosted glass effect */
+  padding: 20px;
+  width: 800px;
+  margin-left: 170px;
+}
+
+.grid-item::before {
+  content: "";
+  background: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(10px); /* Apply a blur effect to create the frosted glass effect */
+  opacity: 0.7; /* Adjust the opacity to control the level of transparency */
+  z-index: -1; /* Place the pseudo-element below the content */
+}
+
+
+.grid-item img {
+  max-width: 100%;
+  height: 350px;
+  width: 350px;
+}
+
+.grid-item h3 {
+  margin: 10px 0;
+  font-size: 1.5em; /* Larger title */
+}
+
+.grid-item p {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.grid-item button {
+  background-color: #7137cf;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.grid-item button:hover {
+  background-color: #082e58;
+}
+
+/* Apply styles to the grid container */
+.floor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
+  grid-gap: 20px; /* Add spacing between grid items */
+  padding: 20px; /* Add padding to the grid container */
+}
+/* Apply styles to each floor grid item */
+/* Add styles to make the floor sections clickable */
+.floor {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(0, 123, 255, 0.7); /* Default background color */
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: background-color 0.3s; /* Transition for background color change */
+  cursor: pointer;
+  text-decoration: none; /* Remove underlines from links */
+}
+/* Change color on hover */
+.floor:hover {
+  background-color: #0269d8; /* New background color on hover */
+}
+
+
+
+

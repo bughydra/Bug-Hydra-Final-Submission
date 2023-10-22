@@ -1,0 +1,5 @@
+<h1>Select your floor</h1>
+<div *ngFor="let tempFloor of floorList" class="floor-grid">
+  <a class="floor" routerLink="/rooms/{{tempFloor.id}}" routerLinkActive="active-link">{{tempFloor.floorName}}</a>
+
+</div>
